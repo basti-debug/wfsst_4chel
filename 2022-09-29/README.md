@@ -3,6 +3,7 @@
 ##Klassendiagramme 
 ~~~plantuml
 @startuml
+skinparam classAtribute 
 class Vehicle{
 - licensePlate : string 
 - model : string
