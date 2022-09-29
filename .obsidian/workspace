@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "2022-09-29/README.md",
             "mode": "source",
             "source": true
           }
@@ -22,8 +22,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
-            "mode": "source",
+            "file": "2022-09-29/README.md",
+            "mode": "preview",
             "source": true
           }
         },
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "2022-09-29/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "2022-09-29/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "2022-09-29/README.md"
               }
             }
           }
@@ -142,10 +142,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fa6a9910ddf99303",
+  "active": "f3e53d8088fcecd6",
   "lastOpenFiles": [
-    "2022-09-29/README.md",
     "README.md",
+    "2022-09-29/README.md",
     "Versionsverwaltungen.md",
     "README.md.md"
   ]

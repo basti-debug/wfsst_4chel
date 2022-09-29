@@ -144,7 +144,7 @@ mkdir repos
 cd repos
 
 #clonen des repos in das aktuelle Verzeichnis
- git clone https://gitlab.com/gabriel.ritter2005/wfsst_4xhel-ritter-2022.git
+ git clone https://gitlab.com/basti-debug/wfsst_4chel_mayrhofer_2022.git
 #Zugriff auf das repository mit einem Schlüssel
 # dazu muss EINMAL ein Schlüssel generiert werden und auf gitlab
 # hinterlegt werden
@@ -157,11 +157,11 @@ cat ~/.ssh/id_rsa.pub
 #gitlab.com im eigenen Profil unter ssh-keys eingefügt
 
 # nun kann das repo über ssh (und somit ohne Authentifizierung über UID + PW) geladen werden
-git clone git@gitlab.com:gabriel.ritter2005/wfsst_4xhel-ritter-2022.git
+git clone git@gitlab.com:basti-debug/wfsst_4chel_mayrhofer_2022.git
 
 # einmal in git die Userdaten hinterlegen
-git config --global user.name "Gabriel Ritter"
-git config --global user.email "gabriel.ritter@student.htl-rankweil.at"
+git config --global user.name "basti-debug"
+git config --global user.email "basti.debug@gmail.com"
 
 #zeigt Änderungen an Dateien an
 git status
