@@ -6,7 +6,54 @@
         xmlns:local="clr-namespace:VehicleFleetApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Open"/>
+                <MenuItem Header="Save"/>
+                <MenuItem Header="Save as ..."/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Delete all"/>
+            </MenuItem>
+        </Menu>
+    
+    
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
     </Grid>
+        <StackPanel>
+            <WrapPanel>
+                <TextBlock Text="Model" Width="100"/>
+                <TextBlock x:Name="txtModel" Width="80"/>
+            </WrapPanel>
+            <WrapPanel>
+                <TextBlock Text="Licencensplate" Width="100"/>
+                <TextBlock x:Name="txtlicens" Width="80"/>
+            </WrapPanel>
+            <WrapPanel>
+                <TextBlock Text="Location" Width="100"/>
+                <TextBlock x:Name="txtlocation" Width="80"/>
+            </WrapPanel>
+            <WrapPanel>
+                <TextBlock Text="Fuel" Width="100"/>
+                <TextBlock x:Name="txtfuel" Width="80"/>
+            </WrapPanel>
+            <WrapPanel>
+                <TextBlock Text="Total Distance" Width="100"/>
+                <TextBlock x:Name="txttotdist" Width="80"/>
+            </WrapPanel>
+            <WrapPanel>
+                <TextBlock Text="Availabilty" Width="100"/>
+                <TextBlock x:Name="txtavailable" Width="80"/>
+            </WrapPanel>
+        </StackPanel>
+    </DockPanel>
 </Window>

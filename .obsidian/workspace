@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-09-29/README.md",
+            "file": "README.md",
             "mode": "source",
             "source": true
           }
@@ -22,8 +22,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2022-09-29/README.md",
-            "mode": "preview",
+            "file": "README.md",
+            "mode": "source",
             "source": true
           }
         },
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2022-09-29/README.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2022-09-29/README.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2022-09-29/README.md"
+                "file": "README.md"
               }
             }
           }
@@ -144,8 +144,10 @@
   },
   "active": "f3e53d8088fcecd6",
   "lastOpenFiles": [
+    "ctorsnip.png",
     "README.md",
     "2022-09-29/README.md",
+    "Pasted image 20221006102828.png",
     "Versionsverwaltungen.md",
     "README.md.md"
   ]

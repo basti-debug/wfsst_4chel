@@ -3,7 +3,7 @@
 ##Klassendiagramme 
 ~~~plantuml
 @startuml
-skinparam classAtribute 
+skinparam classAtributeIconSize 0
 class Vehicle{
 - licensePlate : string 
 - model : string
@@ -19,6 +19,7 @@ class Vehicle{
 + Available {set,get;} : bool
 + Location {set;get;} : string 
 
+--
 + Vehicle(lp,mod, totDist, fuell, avail,loc)
 
 + ToString() : string 
@@ -27,4 +28,20 @@ class Vehicle{
 }
 
 @enduml
+~~~
+
+~~~plantuml
+@startuml
+skinparam classAtributeIconSize 0
+class Vehicles 
+{
+-items: List<Vehicle>
+--
++Items {get} : List<Vehicle>
+--
++Vehicles()
++save(filename : string) : void
++open(filename : string) : void
+}
+
 ~~~
