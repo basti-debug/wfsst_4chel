@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VehicleFleetApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="800">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File">
-                <MenuItem Header="Open"/>
-                <MenuItem Header="Save"/>
-                <MenuItem Header="Save as ..."/>
+                <MenuItem Header="Open" Click="openlabelclick"/>
+                <MenuItem Header="Save" Click="savelabelclick"/>
+                <MenuItem Header="Save as ..." Click="saveaslableclick"/>
             </MenuItem>
             <MenuItem Header="Edit">
                 <MenuItem Header="Delete all"/>
@@ -30,30 +30,39 @@
         </Grid.RowDefinitions>
     </Grid>
         <StackPanel>
-            <WrapPanel>
+            <WrapPanel Margin="5">
                 <TextBlock Text="Model" Width="100"/>
-                <TextBlock x:Name="txtModel" Width="80"/>
+                <TextBox x:Name="txtModel" Width="80"/>
             </WrapPanel>
-            <WrapPanel>
+            <WrapPanel Margin="5">
                 <TextBlock Text="Licencensplate" Width="100"/>
-                <TextBlock x:Name="txtlicens" Width="80"/>
+                <TextBox x:Name="txtlicens" Width="80"/>
             </WrapPanel>
-            <WrapPanel>
+            <WrapPanel Margin="5">
                 <TextBlock Text="Location" Width="100"/>
-                <TextBlock x:Name="txtlocation" Width="80"/>
+                <TextBox x:Name="txtlocation" Width="80"/>
             </WrapPanel>
-            <WrapPanel>
+            <WrapPanel Margin="5">
                 <TextBlock Text="Fuel" Width="100"/>
-                <TextBlock x:Name="txtfuel" Width="80"/>
+                <Slider Width="80" Minimum="0" Maximum="100" x:Name="sldFuellevel"/>
             </WrapPanel>
-            <WrapPanel>
+            <WrapPanel Margin="5">
                 <TextBlock Text="Total Distance" Width="100"/>
-                <TextBlock x:Name="txttotdist" Width="80"/>
+                <TextBox x:Name="txttotdist" Width="80"/>
             </WrapPanel>
-            <WrapPanel>
+            <WrapPanel Margin="5">
                 <TextBlock Text="Availabilty" Width="100"/>
-                <TextBlock x:Name="txtavailable" Width="80"/>
+                <StackPanel>
+                    <RadioButton Name="rdbAvailable" IsChecked="True" Content="Available"/>
+                    <RadioButton Name="rdbunavailable" IsChecked="False" Content="in Use" Checked="rdbunavailable_Checked"/>
+                </StackPanel>
             </WrapPanel>
+            <Button Content="Add Car to your Libary"
+                        Margin="5" Padding="5"
+                        Name="btnAddVehicle" Click="btnAddVehicle_Click_click"/>
         </StackPanel>
+        <TextBlock Name="tblStatistics" Grid.Row="1"/>
+
+        <ListBox Name="lstVehicles" Grid.RowSpan="2" Grid.Column="1" Background="LightBlue"/>
     </DockPanel>
 </Window>

@@ -5,27 +5,28 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace VehicleFleetApp
+namespace VehicleModel
 {
-    internal class Vehicles
+    public class Vehicles
     {
-        private List<Vehicle> item; 
+        private List<Vehicle> items;
 
         public List<Vehicle> Items
         {
-            get { return item; }
+            get { return items; }
         }
+
 
         public Vehicles()
         {
-            item = new List<Vehicle>();
+            items = new List<Vehicle>();
         }
 
         public void Save(string filename)
         {
             using (StreamWriter writer = new StreamWriter(filename))
             {
-                foreach (Vehicle item in item)
+                foreach (Vehicle item in items)
                 {
                     writer.WriteLine(item.Serialize());
                 }
