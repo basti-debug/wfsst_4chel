@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBindingXYCircle", "DataBindingXYCircle\DataBindingXYCircle.csproj", "{372DB9D0-1E2F-4D4B-8483-0A6E06031ABF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{372DB9D0-1E2F-4D4B-8483-0A6E06031ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372DB9D0-1E2F-4D4B-8483-0A6E06031ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372DB9D0-1E2F-4D4B-8483-0A6E06031ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372DB9D0-1E2F-4D4B-8483-0A6E06031ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAF4E382-A10F-435C-8453-DBD5607DA11C}
+	EndGlobalSection
+EndGlobal
