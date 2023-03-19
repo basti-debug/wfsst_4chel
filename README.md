@@ -188,3 +188,8 @@ git push
 code sniplets: 
 
 ![[ctorsnip.png]]
+
+
+# Gitlab features 
+
+![[Pasted image 20221124093848.png]]

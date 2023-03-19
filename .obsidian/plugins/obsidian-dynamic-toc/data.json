@@ -2,7 +2,7 @@
   "style": "number",
   "min_depth": 2,
   "max_depth": 6,
-  "externalStyle": "_TOC_",
+  "externalStyle": "TOC",
   "supportAllMatchers": false,
   "allow_inconsistent_headings": false
 }
