@@ -1,0 +1,83 @@
+﻿<Window x:Class="AnimationStyleTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AnimationStyleTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Rectangle" x:Key="franz">
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <RotateTransform Angle="5"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="Rectangle" x:Key="sisi">
+            <Setter Property="Fill">
+                <Setter.Value>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Violet" Offset="0"/>
+                        <GradientStop Color="Beige" Offset="0.3"/>
+                        <GradientStop Color="IndianRed" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Animation Square" Click="MenuItem_Click">
+                <MenuItem Header="Item1"/>
+                <MenuItem Header="Item2"/>
+            </MenuItem>
+        </Menu>
+        <Canvas>
+            <Path>
+                <Path.Data>
+                    <RectangleGeometry RadiusX="5" RadiusY="5" Rect="300 150 100 100"/>
+                </Path.Data>
+                <Path.Fill>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Red" Offset="0.0"/>
+                        <GradientStop Color="Gainsboro" Offset="0.5"/>
+                        <GradientStop Color="Blue" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+
+            <Button Content="Andale" Width="100" Height="50" Canvas.Left="500" Canvas.Top="100" Click="Button_Click"/>
+
+            <Rectangle Name="stefan" Width="100" Height="100" Canvas.Left="500" Canvas.Top="194" Fill="Red" Style="{StaticResource franz}"/>
+            <Rectangle Name="schoki" Width="50" Height="50" Canvas.Left="600" Canvas.Top="300" Style="{StaticResource sisi}"/>
+
+
+            <Path Fill="Green" Opacity="0.1" Name="rect">
+                <Path.Data>
+                    <RectangleGeometry Rect="100,100,100,100"/>
+                </Path.Data>
+            </Path>
+
+            <Path Stroke="Black" StrokeThickness="2">
+                <Path.Fill>
+                    <SolidColorBrush Color="Red" x:Name="elliColor"/>
+                </Path.Fill>
+                <Path.Data>
+                    <EllipseGeometry x:Name="elliPath" RadiusX="5" RadiusY="5" Center="100,100"/>
+                </Path.Data>
+            </Path>
+
+            <Path Stroke="Aqua" StrokeThickness="2">
+                <Path.Fill>
+                    <SolidColorBrush Color="Violet"/>
+                </Path.Fill>
+                <Path.Data>
+                    <EllipseGeometry x:Name="andi" RadiusX="50" RadiusY="50" Center="100,100"/>
+                </Path.Data>
+            </Path>
+        </Canvas>
+    </DockPanel>
+
+</Window>
