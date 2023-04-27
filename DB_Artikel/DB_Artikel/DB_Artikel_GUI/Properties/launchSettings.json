@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DB_Artikel_GUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DB_Artikel_GUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
