@@ -54,6 +54,7 @@ namespace DB_Artikel
             string price = Console.ReadLine();
             actArticle.Price = double.Parse(price);
 
+            
             articles.Update("articles.sqlite");
             PrintTable(articles, defColor); 
         }
